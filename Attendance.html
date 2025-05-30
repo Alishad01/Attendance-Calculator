@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Attendance Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Side Panel -->
+  <div id="sidePanel" class="side-panel">
+    <button id="closePanel" class="close-btn">&times;</button>
+    <nav>
+      <ul>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Other Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Overlay -->
+  <div id="overlay" class="overlay"></div>
+
+  <header>
+    <div class="logo">
+      <a href="#" class="great-vibes-regular">Attendance<br>Calculator</a>
+    </div>
+
+    <ul class="navlist">
+      <!-- Removed duplicate side panel -->
+    </ul>
+
+    <div class="right-content">
+      <button class="nav-btn" id="aboutBtn">About</button>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+  </header>
+
+    <!-- Content section -->
+    <section class="content">
+        <div class="content-text">
+            <h5>#Full Attendance</h5>
+            <h1>Check Attendance</h1>
+            <p class="spaced-paragraph">This Calculator helps you to check your attendance and tells how many days you can bunk. It also helps you to check how many days you need to be present to complete your Attendance Criteria.<br></p>
+            <div class="main-content">
+                <a href="#" class="btn" id="checkNowBtn">Check Now</a>
+                <a href="#" class="Hi-atten">100% | <span>Highest Attendance</span></a>
+            </div>
+        </div>
+        <div class="content-img">
+            <img src="img/Designercopy.png" alt="Attendance Calculator">
+        </div>
+    </section>
+
+    <!-- New moved section for content-text02 -->
+    <section class="extra-info">
+        <div class="content-text02">
+            <p class="spaced-paragraph">This attendance calculator helps you track your class attendance and ensures you meet the required criteria to avoid fines...</p>
+
+            <p class="spaced-paragraph">To avoid fines related to attendance, it's essential to understand and adhere to your institution’s specific criteria. Generally, attendance policies stipulate a minimum percentage of classes that students must attend, often around 75-90%. Regular attendance not only helps avoid fines but also contributes significantly to academic success.</p>
+
+            <p class="spaced-paragraph">Many institutions track attendance electronically, so it's vital to ensure you’re marked present each class. If you know you’ll be absent, notify your instructor in advance when possible, as some policies allow for excused absences under certain conditions, like illness or emergencies.</p>
+
+            <p class="spaced-paragraph">Additionally, familiarize yourself with the process for appealing fines if you believe there were extenuating circumstances for your absences. Staying organized, setting reminders for class times, and actively participating in your courses can also enhance your engagement, making you less likely to miss classes. By following these guidelines, you can maintain good standing and focus on your studies without the added stress of fines.</p>
+        </div>
+    </section>
+
+    <!-- Calculator section -->
+    <section id="calculator" class="cal-content">
+        <h2>Attendance Calculator</h2>
+        <div class="calculator-container">
+            <label for="presentLectures">Present Lectures:</label>
+            <input type="number" id="presentLectures" placeholder="Enter present lectures">
+            <label for="totalLectures">Total Lectures:</label>
+            <input type="number" id="totalLectures" placeholder="Enter total lectures">
+            <label for="attendanceCriteria">Attendance Criteria (%):</label>
+            <input type="number" id="attendanceCriteria" placeholder="Enter attendance criteria percentage">
+            <button type="button" onclick="calculateAttendance()">Calculate</button>
+            <p id="results"></p>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
