@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         document.getElementById("calculator").scrollIntoView({ behavior: "smooth" });
     });
+});
     // Attendance Calculator logic
     function calculateAttendance() {
         let present = parseFloat(document.getElementById('presentLectures').value);
@@ -56,4 +57,3 @@ document.addEventListener('DOMContentLoaded', () => {
         sidePanel.classList.remove('open');
         overlay.style.display = 'none';
     });
-});
