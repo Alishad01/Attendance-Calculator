@@ -11,8 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         document.getElementById("calculator").scrollIntoView({ behavior: "smooth" });
     });
-
-
     // Attendance Calculator logic
     function calculateAttendance() {
         let present = parseFloat(document.getElementById('presentLectures').value);
@@ -38,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert("Total lectures and attendance criteria must be greater than zero, and criteria must be 100% or less.");
         }
     }
+    document.getElementById('calculateBtn').addEventListener('click', calculateAttendance);
 
     // Get elements
     const aboutBtn = document.querySelector('.nav-btn'); // The "About" button
