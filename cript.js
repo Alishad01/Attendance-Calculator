@@ -36,8 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
             alert("Total lectures and attendance criteria must be greater than zero, and criteria must be 100% or less.");
         }
     }
-    document.getElementById('calculateBtn').addEventListener('click', calculateAttendance);
-
     // Get elements
     const aboutBtn = document.querySelector('.nav-btn'); // The "About" button
     const sidePanel = document.getElementById('sidePanel');
